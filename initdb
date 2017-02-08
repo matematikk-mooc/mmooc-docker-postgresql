@@ -7,7 +7,7 @@ if [ "$DBPASS" == "" ]; then
     exit 1
 fi
 
-postgres_data=/var/lib/postgresql/9.1/main
+postgres_data=/var/lib/postgresql/9.5/main
 
 if [ "$(ls -A $postgres_data)" ]; then
     echo "DB already initialized"
